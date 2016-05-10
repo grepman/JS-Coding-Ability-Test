@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding Ability Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class= "branding">
+  		<img src= "https://www.instarem.com/images/logo.svg" class="branding-logo"/>
+  		<p class="page_title-title">Coding Ability Test <span class="sub-header">(Please answer the following <b>Javascript</b> questions)</p></p>
+
+  	</div>
+
+    <div id= "questionComponents">
+      <div class="iquestion-info_body">
+        <p lingdex="0"><span class="question-number">1. </span> What is a potential pitfall with using <code>typeof bar === "object"</code> to determine if <code>bar</code> is an object?  How can this pitfall be avoided?</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="8"><span class="question-number">2. </span> What will the code below output to the console and why?</p>
+        <pre><code>(function(){
+  var a = b = 3;
+})();
+
+console.log("a defined? " + (typeof a !== 'undefined'));
+console.log("b defined? " + (typeof b !== 'undefined'));
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="15"><span class="question-number">3. </span> What will the code below output to the console and why?</p>
+        <pre><code>var myObject = {
+    foo: "bar",
+    func: function() {
+        var self = this;
+        console.log("outer func:  this.foo = " + this.foo);
+        console.log("outer func:  self.foo = " + self.foo);
+        (function() {
+            console.log("inner func:  this.foo = " + this.foo);
+            console.log("inner func:  self.foo = " + self.foo);
+        }());
+    }
+};
+myObject.func();
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="19"><span class="question-number">4. </span> What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="22"><span class="question-number">5. </span> What is the significance, and what are the benefits, of including <code>'use strict'</code> at the beginning of a JavaScript source file?</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="25"><span class="question-number">6. </span> Consider the two functions below.  Will they both return the same thing?  Why or why not?</p>
+        <pre><code>function foo1()
+{
+  return {
+      bar: "hello"
+  };
+}
+
+function foo2()
+{
+  return
+  {
+      bar: "hello"
+  };
+}
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="32"><span class="question-number">7. </span> What is <code>NaN</code>?  What is its type?  How can you reliably test if a value is equal to <code>NaN</code>?</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="39"><span class="question-number">8. </span> What will the code below output?  Explain your answer.</p>
+        <pre><code>console.log(0.1 + 0.2);
+console.log(0.1 + 0.2 == 0.3);
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="42"><span class="question-number">9. </span> Discuss possible ways to write a function <code>isInteger(x)</code> that determines if <code>x</code> is an integer.</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="51"><span class="question-number">10. </span> In what order will the numbers 1-4 be logged to the console when the code below is executed?  Why?</p>
+        <pre><code>(function() {
+    console.log(1); 
+    setTimeout(function(){console.log(2)}, 1000); 
+    setTimeout(function(){console.log(3)}, 0); 
+    console.log(4);
+})();
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="61"><span class="question-number">11. </span> Write a simple function (less than 80 characters) that returns a boolean indicating whether or not a string is a <a href="http://www.palindromelist.net/" rel="noopener noreferrer" target="_blank" data-pass-click-event="true">palindrome</a>.</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="64"><span class="question-number">12. </span> Write a <code>sum</code> method which will work properly when invoked using either syntax below.</p>
+        <pre><code>console.log(sum(2,3));   // Outputs 5
+console.log(sum(2)(3));  // Outputs 5
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="72"><span class="question-number">13. </span> Consider the following code snippet:</p>
+        <pre><code>for (var i = 0; i &lt; 5; i++) {
+  var btn = document.createElement('button');
+  btn.appendChild(document.createTextNode('Button ' + i));
+  btn.addEventListener('click', function(){ console.log(i); });
+  document.body.appendChild(btn);
+}
+</code></pre>
+        <p lingdex="73"> (a) What gets logged to the console when the user clicks on “Button 4” and why?</p>
+        <p lingdex="74"> (b) Provide one or more alternate implementations that will work as expected.</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="79"><span class="question-number">14. </span> What will the code below output to the console and why?</p>
+        <pre><code>var arr1 = "john".split('');
+var arr2 = arr1.reverse();
+var arr3 = "jones".split('');
+arr2.push(arr3);
+console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="87"><span class="question-number">15. </span> What will the code below output to the console and why ?</p>
+        <pre><code>console.log(1 +  "2" + "2");
+console.log(1 +  +"2" + "2");
+console.log(1 +  -"1" + "2");
+console.log(+"1" +  "1" + "2");
+console.log( "A" - "B" + "2");
+console.log( "A" - "B" + 2);
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="97"><span class="question-number">16. </span> The following recursive code will cause a stack overflow if the array list is too large.  How can you fix this and still retain the recursive pattern?</p>
+        <pre><code>var list = readHugeList();
+
+var nextListItem = function() {
+    var item = list.pop();
+
+    if (item) {
+        // process the list item...
+        nextListItem();
+    }
+};
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="100"><span class="question-number">17. </span> What is a “closure” in JavaScript?  Provide an example.</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="104">What will be the output of the following code:</p>
+        <pre><code>for (var i = 0; i &lt; 5; i++) {
+  setTimeout(function() { console.log(i); }, i * 1000 );
+}
+</code></pre>
+        <p lingdex="105">Explain your answer.  How could the use of closures help here?</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="110"><span class="question-number">18. </span> What would the following lines of code output to the console?</p>
+        <pre><code class="language-js">console.log("0 || 1 = "+(0 || 1));
+console.log("1 || 2 = "+(1 || 2));
+console.log("0 &amp;&amp; 1 = "+(0 &amp;&amp; 1));
+console.log("1 &amp;&amp; 2 = "+(1 &amp;&amp; 2));
+</code></pre>
+        <p lingdex="111">Explain your answer.</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="118"><span class="question-number">19. </span> What will be the output when the following code is executed? Explain.</p>
+        <pre><code class="language-js">console.log(false == '0')
+console.log(false === '0')
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="121"><span class="question-number">20. </span> What is the output out of the following code? Explain your answer.</p>
+        <pre><code class="language-javascript">var a={},
+    b={key:'b'},
+    c={key:'c'};
+
+a[b]=123;
+a[c]=456;
+
+console.log(a[b]);
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="124"><span class="question-number">21. </span> What will the following code output to the console:</p>
+        <pre><code>console.log((function f(n){return ((n &gt; 1) ? n * f(n-1) : n)})(10));
+</code></pre>
+        <p lingdex="125">Explain your answer.</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="129"><span class="question-number">22. </span> Consider the code snippet below. What will the console output be and why?</p>
+        <pre><code>(function(x) {
+    return (function(y) {
+        console.log(x);
+    })(2)
+})(1);
+</code></pre>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="133"><span class="question-number">23. </span> What will the following code output to the console and why:</p>
+        <pre><code>var hero = {
+    _name: 'John Doe',
+    getSecretIdentity: function (){
+        return this._name;
+    }
+};
+
+var stoleSecretIdentity = hero.getSecretIdentity;
+
+console.log(stoleSecretIdentity());
+console.log(hero.getSecretIdentity());
+</code></pre>
+        <p lingdex="134">What is the issue with this code and how can it be fixed.</p>
+      </div>
+      <div class="iquestion-info_body">
+        <p lingdex="138"><span class="question-number">24. </span> Create a function that, given a DOM Element on the page, will visit the element itself and <em>all</em> of its descendents (<em>not just its immediate children</em>). For each element visited, the function should pass that element to a provided callback function.</p>
+        <p lingdex="139">The arguments to the function should be:</p>
+        <ul>
+          <li>a DOM element</li>
+          <li>a callback function (that takes a DOM element as its argument)</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
